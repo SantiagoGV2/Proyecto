@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+          <div class="logo">
+            <img src="../img/logo.png" alt="logo" />
+            <h1>FibraTelTec</h1>
+          </div>
+  
+          <div class="menu">
+            <nav>
+              <ul class="item">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./claro.html">Registros Claro</a></li>
+                <li>
+                  <a href="../pages/tecnicosyauxiliares.html"
+                    >Tecnicos y Auxiliares</a
+                  >
+                </li>
+  
+                <li><a href="./herramienta.html">Herramientas</a></li>
+  
+                <li><a href="./dotacion.html">Dotación</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <main>
+        <div class="container is-fluid mb-6">
+          <h1 class="title">Herramientas</h1>
+        </div>
+      <div class="container pb-6 pt-6">
+        <div class="notification is-danger is-light">
+          <strong>¡Ocurrio un error inesperado!</strong><br/>
+          El USUARIO que intenta eliminar no existe
+        </div>
+
+        <div class="table-container">
+          <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+            <thead>
+              <tr class="has-text-centered">
+                <th>#Codigo</th>
+                <th>Descripcion</th>
+                <th>tipo</th>
+                <th>Estado</th>
+                <th>Fecha Llegada</th>
+                <th colspan="2">Opciones</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="has-text-centered">
+                <td colspan="7">No hay registros en el sistema</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="has-text-centered">
+          <button type="submit" class="button is-info is-rounded">
+            Guardar
+          </button>
+        </p>
+      </div>
+      <h2>Empleados con herramienta</h2>
+      <a href="./her_empleados.html"><button>Ver</button></a>
+      </main>
+</body>
+</html>
