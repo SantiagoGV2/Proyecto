@@ -7,36 +7,81 @@
     <title>Document</title>
 </head>
 <body>
-    <header class="header">
-        <div class="container">
-          <div class="logo">
-            <img src="../img/logo.png" alt="logo" />
-            <h1>FibraTelTec</h1>
-          </div>
+    <header>
+        <div class="is-flex">
+          <div class="is-flex">
+            <div class="is-inline-block">
+              <img src="../img/logo.jpeg" alt="logo" style="width: 130px ; height: 130px;"/>
+            </div>
   
-          <div class="menu">
-            <nav>
-              <ul class="item">
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./claro.html">Registros Claro</a></li>
-                <li>
-                  <a href="../pages/tecnicosyauxiliares.html"
-                    >Tecnicos y Auxiliares</a
-                  >
-                </li>
+          <div class="navbar-start">
+            <a class="navbar-item" href="./index.html">Home</a>
+            <div class="navbar-item has-dropdown is-hoverable">
+              <a class="navbar-link">Equipos Claro</a>
   
-                <li><a href="./herramienta.html">Herramientas</a></li>
+              <div class="navbar-dropdown">
+                <ul>
+                  <li><a href="./registro_equipos.html" class="navbar-item">Registro</a></li>
+                  <li><a href="./claro.html" class="navbar-item">Lista</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link">Tecnicos y Auxiliares</a>
   
-                <li><a href="./dotacion.html">Dotación</a></li>
-              </ul>
-            </nav>
-          </div>
+                <div class="navbar-dropdown">
+                  <ul>
+                    <li><a href="./regis_tecnicosyauxiliares.html" class="navbar-item">Registro</a></li>
+                    <li><a href="./tecnicosyauxiliares.html" class="navbar-item">Lista</a></li>
+                    <li><a href="./regis_her_emple.html" class="navbar-item">Registro Herramienta</a></li>
+                    <li><a href="./regis_her_emple.html" class="navbar-item">Lista Herramienta</a></li>
+                    <li><a href="./regis_equi_emple.html" class="navbar-item">Registro Equipos</a></li>
+                    <li><a href="./equipos_asig.html" class="navbar-item">Lista Equipos</a></li>
+                  </ul>
+                </div>
+            </div>
+            <div class="navbar-item has-dropdown is-hoverable">
+              <a class="navbar-link">Herramientas</a>
+  
+              <div class="navbar-dropdown">
+                <ul>
+                  <li><a href="./registroherramienta.html" class="navbar-item">Registro</a></li>
+                  <li><a href="./herramienta.html" class="navbar-item">Lista</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="navbar-item has-dropdown is-hoverable">
+              <a class="navbar-link">Dotaciones</a>
+  
+              <div class="navbar-dropdown">
+                <ul>
+                  <li><a href="./regisDotaciones.html" class="navbar-item">Registro</a></li>
+                  <li><a href="./dotacion.html" class="navbar-item">Lista</a></li>
+                </ul>
+              </div>
+            </div>
+        </div>
         </div>
       </header>
       <main>
         <div class="container is-fluid mb-6">
           <h1 class="title">Herramientas</h1>
         </div>
+        <section class="busqueda">
+          <div class="container pb-6 pt-6">
+                <form action="" method="POST" autocomplete="off" >
+                    <input type="hidden" name="modulo_buscador" value="usuario">   
+                    <div class="field is-grouped">
+                        <p class="control is-expanded">
+                            <input class="input is-rounded" type="text" name="txt_buscador" placeholder="¿Qué estas buscando?" pattern="[a-zA-Z0-9áéíóúÁÉÍÓÚñÑ ]{1,30}" maxlength="30" >
+                        </p>
+                        <p class="control">
+                            <button class="button is-info" type="submit" >Buscar</button>
+                        </p>
+                    </div>
+                </form>
+            </div>
+        </section>
       <div class="container pb-6 pt-6">
         <div class="notification is-danger is-light">
           <strong>¡Ocurrio un error inesperado!</strong><br/>
@@ -62,14 +107,7 @@
             </tbody>
           </table>
         </div>
-        <p class="has-text-centered">
-          <button type="submit" class="button is-info is-rounded">
-            Guardar
-          </button>
-        </p>
       </div>
-      <h2>Empleados con herramienta</h2>
-      <a href="./her_empleados.html"><button>Ver</button></a>
-      </main>
+    </main>
 </body>
 </html>

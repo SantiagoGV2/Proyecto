@@ -9,23 +9,22 @@
 <body>
     <header class="header">
       <div class="is-flex">
-        <div class="is-flex">
-          <div class="is-inline-block">
-            <img src="../img/logo.jpeg" alt="logo" style="width: 130px ; height: 130px;"/>
-          </div>
+        <div class="is-inline-block">
+          <img src="../img/logo.jpeg" alt="logo" style="width: 130px ; height: 130px;"/>
+        </div>
   
           <div class="navbar-start">
             <a class="navbar-item" href="./index.html">Home</a>
             <div class="navbar-item has-dropdown is-hoverable">
-              <a class="navbar-link">Equipos Claro</a>
-  
-              <div class="navbar-dropdown">
-                <ul>
-                  <li><a href="./registro_equipos.html" class="navbar-item">Registro</a></li>
-                  <li><a href="./claro.html" class="navbar-item">Lista</a></li>
-                </ul>
+                <a class="navbar-link">Equipos Claro</a>
+    
+                <div class="navbar-dropdown">
+                  <ul>
+                    <li><a href="./registro_equipos.html" class="navbar-item">Registro</a></li>
+                    <li><a href="./claro.html" class="navbar-item">Lista</a></li>
+                  </ul>
+                </div>
               </div>
-            </div>
             <div class="navbar-item has-dropdown is-hoverable">
                 <a class="navbar-link">Tecnicos y Auxiliares</a>
   
@@ -65,7 +64,7 @@
       </header>
       <main>
         <div class="container is-fluid mb-6">
-            <h1 class="title">Registro de Herramietas de Empleados</h1>
+            <h1 class="title">Registro Equipos Claro</h1>
           </div>
     
           <div class="container pb-6 pt-6">
@@ -94,7 +93,7 @@
                 </div>
                 <div class="column">
                   <div class="control">
-                    <label>Fecha Entrega</label>
+                    <label>Descripcion</label>
                     <input
                       class="input"
                       type="text"
@@ -108,37 +107,34 @@
               </div>
               <div class="columns">
                 <div class="column">
-                    <label>Cad_herramienta</label><br />
-                    <div class="select is-rounded">
-                      <select name="producto_categoria">
-                        <option value="" selected="">Seleccione una opción</option>
-                      </select>
-                    </div>
+                  <div class="control">
+                    <label>Serial</label>
+                    <input
+                      class="input"
+                      type="text"
+                      name="producto_precio"
+                      pattern="[0-9.]{1,25}"
+                      maxlength="25"
+                      required
+                    />
                   </div>
-                  <div class="column">
-                    <label>Cedula</label><br />
-                    <div class="select is-rounded">
-                      <select name="producto_categoria">
-                        <option value="" selected="">Seleccione una opción</option>
-                      </select>
-                    </div>
+                </div>
+                <div class="column">
+                  <div class="control">
+                    <label>No.Salida</label>
+                    <input
+                      class="input"
+                      type="text"
+                      name="producto_stock"
+                      pattern="[0-9]{1,25}"
+                      maxlength="25"
+                      required
+                    />
                   </div>
+                </div>
                 <div class="column">
                     <div class="control">
-                      <label>Fecha Devolucion</label>
-                      <input
-                        class="input"
-                        type="text"
-                        name="producto_stock"
-                        pattern="[0-9]{1,25}"
-                        maxlength="25"
-                        required
-                      />
-                    </div>
-                  </div>
-                  <div class="column">
-                    <div class="control">
-                      <label>Observaciones</label>
+                      <label>Fecha Entrega</label>
                       <input
                         class="input"
                         type="text"
